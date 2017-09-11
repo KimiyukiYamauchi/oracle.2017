@@ -4,6 +4,13 @@
     - $ sudo apt install mysql-server
 - rootユーザでMySQLに接続<br>
 $ mysql -u root -p
+- サーバ側の文字コードの変更<br>
+$ sudo subl /etc/mysql/mysql.conf.d/mysqld.cnf<br>
+「mysqld」セクションに「character-set-server=utf8」を追加
+```
+[mysqld]
+character-set-server=utf8
+```
 - データベース作成<br>
 mysql> create database testdb;
 - 「testdb」に接続できるユーザを作成(ユーザ名:test, パスワード:test)<br>
