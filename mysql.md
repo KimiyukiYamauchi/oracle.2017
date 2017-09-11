@@ -24,7 +24,7 @@ Enter password: test
 ``` sql
 create table users(
     id int primay key auto_increment,
-    name varchar(255),
+    name varchar(255)
 );
 ```
 - データの追加
