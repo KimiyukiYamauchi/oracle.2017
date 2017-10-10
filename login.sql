@@ -28,6 +28,7 @@ col phone_number for a18
 col job_id for 999
 col salary for 99999
 --col commission_pct for 999
+col commission_pct for 9.99
 col manager_id for 999
 col department_id for 999
 
