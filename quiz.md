@@ -19,7 +19,7 @@
 |                    Dream Salaries                     |
 |:-------------------------------------------------------|
 | Gienz earns $8,300.00 monthly but wants $24,900.00.    |
-| Higgins earns $12,000.00 monthly but wants $36,000.99. |
+| Higgins earns $12,000.00 monthly but wants $36,000.00. |
 | ・・・                                                 |
 
 | LAST_NAME | HIRE_DATE |                   REVIEW                   |
