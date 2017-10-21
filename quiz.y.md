@@ -45,7 +45,7 @@ deptno列を表示する
 1. 文字列「Oracle Server」の「Server」を「Master」に変換し表示する
 1. employees表からempno, ename, yomi列及びyomiの長さを表示する
 1. 文字列「2011年01月01日」を日付値に変換し表示する
-1. 字列「￥5,000,000」を数値の「5000000」に変換し、12で割りさらにその値を  
+1. 文字列「￥5,000,000」を数値の「5000000」に変換し、12で割りさらにその値を  
 小数点以下で四捨五入し、表示する
 1. employees表からename, sal, comm,sal+comm（commがnullの場合は  
 NVL関数を使用して0と見なす）を表示する
@@ -53,3 +53,65 @@ NVL関数を使用して0と見なす）を表示する
 NVL2関数を使用して0と見なす）を表示する
 1. employees表からename, sal, comm, sal+comm（commがnullの場合は  
 COALESCE関数を使用して0と見なす）を表示する
+1. employees表からenameとCASE式を使って、deptnoが10の時は  
+salを1.1倍、20の時は1.2倍、それ以外はsalを表示する．  
+この時、計算結果の別名として、NEW_SALを表示する
+1. employees表からenameとDECODE関数を使って、deptnoが10の時は  
+salを1.1倍、20の時は1.2倍、それ以外はsalを表示する．  
+この時、計算結果の別名として、NEW_SALを表示する
+1. employees表からsalの平均と合計を表示する
+1. employees表からdeptno毎のdeptno、人数、salの平均を表示する  
+この時、deptnoの昇順で、ソートする
+1. employees表からdeptno、job毎のdeptno、job、人数、salの平均  
+を表示する．この時、deptnoの昇順で、ソートする
+1. employees表からdeptno毎のsalの平均の最大値を表示する
+1. employees表からdeptnoとjobの組み合わせ毎のdeptno、job、  
+人数、salの平均を表示するSQL文を書いて下さい．但し、人数が２人以上  
+の組み合わせのみ表示し、deptnoの昇順で、ソート
+1. employees表とdepartments表を結合(deptno)し、empno, ename,  
+dnameを表示する
+1. employees表とdepartments表を結合(deptno)し、  
+deptnoが10または20のempno, ename, dnameを表示する
+1. orders表、customers表およびemployees表の３つの表を  
+結合(orders.custno, customers.custno, orders.salesman_no,  
+employees.empno)し、ordno, date_ordered, cname, enameを表示する
+1. employees表とsalgrades表を非等価結合(employees.sal,  
+salgrades.losal, salgrades.hisal)し、empno, ename, sal,  
+gradeを表示する
+1. employees表を自己結合(empno, mgr)して、empno, enameおよび  
+上司のempno, enameを表示する
+1. 上記の自己結合で、外部結合を用い、「社長」のデータも取り出せる様に修正
+1. USING句を使用し、employees表とdepartments表を結合(deptno)し、  
+empno, ename, deptno, dnameを表示する
+1. employees表とdepartmentsを結合(deptno)し、empno, ename,  
+deptno, dnameを表示。この時、employees表でだれも  
+割り当られていないdepartments表の部門も表示する
+1. employees表からempnoが「1003」のsal（employees表から副問い合わせ)以上  
+のempno, ename, salを表示する
+1. employees表からdnameが「営業」（departments表から副問い合わせ）の  
+empno, ename, deptnoを表示する
+1. employees表からsalがempnoの「1003」以上（employees表から副問い合わせ）、  
+かつdnameが「営業」（departments表から副問い合わせ)のempno, ename, sal,  
+deptnoを表示
+1. employees表とdepartments表を結合(deptno)し、deptno,  
+dname毎のsalの平均が全体の平均（employees表から副問い合わせ）以上である  
+deptno, dname, avg(sal)を表示
+1. employees表を自己結合(empno, mgr)し、empnoが「山田」または「伊藤」の上司(mgr)  
+(employees表から副問い合わせ)のempno, enameおよび上司のenameを表示する
+1. employees表からdeptnoが「10」または「20」のdeptno, empno,enameを表示する  
+select文とdeptnoが「20」または「30」のdeptno, empno,enameを表示するselect文  
+の問い合わせ結果を連結し、重複した行を排除して表示する
+1. employees表からdeptnoが「10」または「20」のdeptno, empno,enameを表示する  
+select文とdeptnoが「20」または「30」のdeptno, empno,enameを表示するselect文  
+の問い合わせ結果を連結し、重複した行も含めて表示する
+1. employees表からdeptnoが「10」または「20」のdeptno, empno,enameを表示する  
+select文とdeptnoが「20」または「30」のdeptno, empno,enameを表示するselect文  
+の問い合わせ結果を連結し、共通した行だけ表示する
+1. employees表からdeptnoが「10」または「20」のdeptno, empno,enameを表示する  
+select文とdeptnoが「20」または「30」のdeptno, empno, enameを表示するselect文  
+の問い合わせ結果を連結し、１つめのselect文の結果のうち、  
+２つ目の問い合わせ結果にない行を表示する
+1. employees表からdeptnoが「10」または「20」のdeptno, empno,enameを表示する  
+select文とdeptnoが「20」または「30」のdeptno, empno, enameを表示する  
+select文の問い合わせ結果を連結し、重複した行を排除して表示する．  
+この時、empnoの昇順で並べて表示
