@@ -1,3 +1,5 @@
+DEFINE _EDITOR="/usr/bin/subl -n -w"
+
 -- desc
 col 名前 for a10
 
