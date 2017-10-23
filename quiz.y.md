@@ -23,6 +23,7 @@
 empno、ename、sal列を表示する
 1. products表でpnameに「A4」を含む場合のprodno、pname、price列を  
 表示する
+1. employees表からyomiの3文字目がiのempno, ename, yomi列を表示する
 1. employees表でcommが「NULL」のempno、ename、sal、comm列を  
 表示する
 1. employees表でsalが「30万以上」かつdeptnoが「30」であるempno、ename、  
