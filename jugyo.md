@@ -74,3 +74,6 @@
 #### データの追加
 - INSERT INTO 表名 [(列名, ...)] 
 - VALUES (値...)
+- SELECT 列名[,列名...]
+- FROM 表名
+- [WHERE 条件]
