@@ -1,5 +1,32 @@
 # オラクル課題
 
+## 10/26
+### 各自のユーザ
+
+#### DEPT表
+
+| 列名 | キーの種類  | NULL/一意 | FK表 | FK列 | データ型 | 長さ |
+|------|-------------|-----------|------|------|----------|-----:|
+| ID   | Primary Key |           |      |      | NUMBER   |    7 |
+| NAME |             |           |      |      | VARCHAR2 |   25 |
+
+#### EMP表
+
+| 列名       | キーの種類    | NULL/一意   | FK表   | FK列   | データ型   | 長さ   |
+| ------     | ------------- | ----------- | ------ | ------ | ---------- | -----: |
+| ID         | Primary Key   |             |        |        | NUMBER     | 7      |
+| LAST_NAME  |               |             |        |        | VARCHAR2   | 25     |
+| FIRST_NAME |               |             |        |        | VARCHAR2   | 25     |
+| DEPT_ID    |               |             | DEPT   | ID     | NUMBER     | 7       |
+
+1. 上記のチャートに基づいてDEPT表を作成
+1. DEPT表にhrのDEPARTMENTS表からデータをコピー。必要な列のみ
+1. 上記のチャートに基づいてEMP表を作成
+1. EMP表にhrのEMPLOYEES表からデータをコピー。必要な列のみ
+1. hrのEMPLOYEES表の構造に基づいてEMPLOYEES2表を作成。EMPLOYEE_ID、  
+FIRST_NAME、LAST_NAME、SALARY及びDEPARTMENT_ID列のみ  
+列名はそれぞれID、FIRST_NAME、LAST_NAME、SAL、DEPT_ID
+
 ## 10/25
 ### 各自のユーザ
 
