@@ -1,7 +1,9 @@
 -- DEFINE _EDITOR="/usr/bin/subl -n -w"
 
+set linesize 60
+
 -- desc
-col 名前 for a10
+-- col 名前 for a10
 
 -- JOB_HISTORY
 
