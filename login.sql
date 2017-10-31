@@ -63,3 +63,5 @@ col region_id for 9
 
 col region_id for 9
 col region_name for a22
+
+-- spool test.log
