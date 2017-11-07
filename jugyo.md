@@ -56,7 +56,7 @@
     - 日付表示書式の変更  
     SQL> alter session set nls_date_format = 'DD-MON-RR';
     - 日付表示言語の変更  
-    SQL> 
+    SQL> alter session set nls_date_language = 'AMERICAN';
     - 西暦の下2桁を表す方法
         - RR => 現在下二桁00 - 49
             - 99 => 1999(50 - 99 => 前の世紀)
@@ -65,10 +65,25 @@
             - 99 => 1999(50 - 99 => 現在の世紀)
             - 03 => 2003(00 - 49 => 次の世紀)
         - YY => 上の2桁は現在の世紀 99 => 2099
-- 変換関数
-- 汎用関数 => NVL, NVL2, NULLIF, COALESCE, CASE, DECODE
+    - ROUND
+        - DD => 12時より前 => 現在の日、12以降 => 翌月
+        - MONTH => 15日 => 今月、16日以降 => 翌月
+        - YEAR => 6/30 => 今年、7/1以降 => 来年
 
 ### 4 変換関数
+    - to_char => 文字列に変換(数値=>文字列,日付値=>文字列)
+    - to_number => 数値に変換(文字列=>数値)
+    - to_date => 日付値に変換(文字列=>日付値)
+    - 暗黙的変換 => オラクルが自動で変換処理
+    - 明示的変換 => 変換関数使って変換する
+    - fm => 埋め込まれた空白を削除したり、先行の0を削除したりする  
+    2回目のfmは機能の無効化
+    - sp => 数字をスペル表記
+    - th => 数字の接尾辞を追加
+    - Month, MONTH, Dd, DD => March, MARCH, Ten , TEN
+
+- 変換関数
+- 汎用関数 => NVL, NVL2, NULLIF, COALESCE, CASE, DECODE
 
 ### 5 グループ関数
 
