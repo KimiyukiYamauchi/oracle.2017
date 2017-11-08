@@ -3,6 +3,30 @@
 ## 11/9
 ### 各自のユーザ
 
+#### 表名: MEMBER
+
+|    列名    | キー | NULL/Unique | デフォルト値 | データ型 | データ長 |
+|------------|------|-------------|--------------|----------|---------:|
+| MEMBER_ID  | PK   | NN,U        |              | NUMBER   |       10 |
+| LAST_NAME  |      | NN          |              | VARCHAR2 |       25 |
+| FIRST_NAME |      |             |              | VARCHAR2 |       25 |
+| ADDRESS    |      |             |              | VARCHAR2 |      100 |
+| CITY       |      |             |              | VARCHAR2 |       30 |
+| PHONE      |      |             |              | VARCHAR2 |       15 |
+| JOIN_DATE  |      | NN          | System Date  | DATE     |          |
+
+#### 表名:TITLE
+
+| 列名          | キー   | NULL/Unique   | Check                                                           | データ型   | データ長   |
+| ------------- | ------ | ------------- | -------                                                         | ---------- | ---------: |
+| TITLE_ID      | PK     | NN,U          |                                                                 | NUMBER     | 10         |
+| TITLE         |        | NN            |                                                                 | VARCHAR2   | 60         |
+| DESCRIPTION   |        | NN            |                                                                 | VARCHAR2   | 400        |
+| RATING        |        |               | G, PG, R, <br>NC17, NR                                          | VARCHAR2   | 4          |
+| CATEGORY      |        |               | DRAMA,<br>COMEDY,<br>ACTION,<br>CHILD,<br>SCIFI,<br>DOCUMENTARY | VARCHAR2   | 20         |
+| RELEASE_DATE  |        |               |                                                                 | DATE       |            |
+
+
 ## 11/7 - 8
 ### 「hr」ユーザ
 
