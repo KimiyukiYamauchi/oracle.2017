@@ -1,5 +1,5 @@
--- col constraint_name for a20
-col table_name for a20
+col constraint_name for a20
+-- col table_name for a20
 col column_name for a20
 col search_condition for a20
 col r_constraint_name for a20
