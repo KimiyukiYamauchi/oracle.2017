@@ -51,7 +51,7 @@
 |-----------|--------|--------------|--------------|------------|----------|----------|
 | RES_DATE  | PK     | NN,U         |              |            | DATE     |          |
 | MEMBER_ID | PK,FK1 | NN,U         | MEMBER       | MEMBER_ID  | NUMBER   |       10 |
-| TITLE_ID  | PK,FK2 | NN           | TITLE        | TITLE_ID   | NUMBER   | 10         |
+| TITLE_ID  | PK,FK2 | NN,U         | TITLE        | TITLE_ID   | NUMBER   |       10 |
 
 
 ## 11/7 - 8
