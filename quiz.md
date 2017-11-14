@@ -1,5 +1,57 @@
 # オラクル課題
 
+## 11/15
+### 各自のユーザ
+
+タイトルはTITLE_IDを設定
+
+|           タイトル          | コピーID | ステータス |
+|-----------------------------|----------|------------|
+| Willie and<br>Christmas Too |        1 | AVAILABLE  |
+| Alien Again                 |        1 | AVAILABLE  |
+|                             |        2 | RENTED     |
+| The Glob                    |        1 | AVAILABLE  |
+| My Day Off                  |        1 | AVAILABLE  |
+|                             |        2 | AVAILABLE  |
+|                             |        3 | RENTED     |
+| Miracles on Ice             |        1 | AVAILABLE  |
+| Soda Gang                   |        1 | AVAILABLE  |
+
+| タイトルID | コピー | メンバーID | レンタル日 | 返却日 |
+|------------|--------|------------|------------|--------|
+|         92 |      1 |        101 | 3日前      | 1日前  |
+|         93 |      2 |        101 | 1日前      | 未     |
+|         95 |      3 |        102 | 2日前      | 未     |
+|         97 |      1 |        106 | 4日前      | 2日前  |
+
+タイトルIDは以下を参照
+
+| タイトルID |           タイトル          |
+|------------|-----------------------------|
+|         92 | Willie and<br>Christmas Too |
+|         93 | Alien Again                 |
+|         95 | My Day Off                  |
+|         97 | Soda Gang                   |
+
+1. TITLE_COPY表にデータを追加、正しく追加されていること確認
+1. RENTAL表にデータを追加、正しく追加されていること確認
+1. TITLE_AVAILビューを作成
+    - TITLE
+    - COPY_ID
+    - STATUS
+    - EXP_RET_DATE
+1. 新しいタイトルを追加
+    - Interstellar Wars
+    - PG
+    - SF映画
+    - 2007年7月7日
+    - 未来の宇宙を舞台にしたアクション映画。  
+    反乱軍は悪の帝国から人類を守ることができるか？
+1. 2つの予約を入力
+    1. Cameron Velasquez、「Interstellar Wars」
+    1. Mark Quick-to-See、「Soda Gang」
+
+
 ## 11/14
 ### 各自のユーザ
 
