@@ -80,10 +80,15 @@
     2回目のfmは機能の無効化
     - sp => 数字をスペル表記
     - th => 数字の接尾辞を追加
+    - fx => 日付書式モデルの完全一致指示
     - Month, MONTH, Dd, DD => March, MARCH, Ten , TEN
 
 - 変換関数
 - 汎用関数 => NVL, NVL2, NULLIF, COALESCE, CASE, DECODE
+    - NULL値をNULL値以外に変換する
+        - NVL(a,b) => aがnullならbを返す
+        - NVL2(a,b,c) => aがnullでないならb、nullならcを返す
+        - COALESCE(a,b,c ...) => aから順番にチェックし、nullでない値を返す
 
 ### 5 グループ関数
 
